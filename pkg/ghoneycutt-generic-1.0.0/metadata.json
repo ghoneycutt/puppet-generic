@@ -3,67 +3,67 @@
   "dependencies": [
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-backup"
+      "name": "ghoneycutt/backup"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-certs"
+      "name": "ghoneycutt/certs"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-dnsclient"
+      "name": "ghoneycutt/dnsclient"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-facter"
+      "name": "ghoneycutt/facter"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-hosts"
+      "name": "ghoneycutt/hosts"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-logrotate"
+      "name": "ghoneycutt/logrotate"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-logwatch"
+      "name": "ghoneycutt/logwatch"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-postfix"
+      "name": "ghoneycutt/postfix"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-puppet"
+      "name": "ghoneycutt/puppet"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-rsync"
+      "name": "ghoneycutt/rsync"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-snmp"
+      "name": "ghoneycutt/snmp"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-ssh"
+      "name": "ghoneycutt/ssh"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-sudo"
+      "name": "ghoneycutt/sudo"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-syslog-ng"
+      "name": "ghoneycutt/syslog-ng"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-utils"
+      "name": "ghoneycutt/utils"
     },
     {
       "version_requirement": ">= 1.0.0",
-      "name": "ghoneycutt-vim"
+      "name": "ghoneycutt/vim"
     }
   ],
   "name": "ghoneycutt-generic",
@@ -74,7 +74,7 @@
     "tests/init.pp": "988e0be1a986e29a2e137748eb15ddad",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
-    "Modulefile": "33dfe2fa20779338a4b019d42e6b094d",
+    "Modulefile": "406d21dc760aaf04186bd6c2666f77fd",
     "manifests/init.pp": "c697f34824b2d28a12913db5da1c1641"
   },
   "types": [
