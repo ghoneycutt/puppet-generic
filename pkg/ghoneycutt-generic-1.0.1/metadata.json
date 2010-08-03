@@ -1,0 +1,84 @@
+{
+  "checksums": {
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "lib/puppet/parser/functions/pop.rb": "b35b1449e635d58798f0c09635636beb",
+    "README": "c1a4871c904caae0d297e59db1ecc8b2",
+    "tests/init.pp": "988e0be1a986e29a2e137748eb15ddad",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
+    "Changelog": "72f7dab928c1c8d48d718ca0093e24b8",
+    "Modulefile": "ff6e549b8852ccbb21b0fa2bfaee200e",
+    "manifests/init.pp": "c4ecfae65ae4dd6e97e2126db9f7ffd4"
+  },
+  "version": "1.0.1",
+  "dependencies": [
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/backup"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/certs"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/dnsclient"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/facter"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/hosts"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/logrotate"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/logwatch"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/postfix"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/puppet"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/rsync"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/snmp"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/ssh"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/sudo"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/syslog_ng"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/utils"
+    },
+    {
+      "version_requirement": ">= 1.0.0",
+      "name": "ghoneycutt/vim"
+    }
+  ],
+  "name": "ghoneycutt-generic",
+  "types": [
+
+  ]
+}
