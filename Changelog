@@ -1,4 +1,0 @@
-1.0.0 - initial release
-1.0.1 - Modulefile depends on syslog_ng instead of syslog-ng
-		see bug #4088 - http://projects.puppetlabs.com/issues/4088
-1.0.2 - added documentation
