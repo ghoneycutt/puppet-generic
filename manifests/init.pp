@@ -308,7 +308,7 @@ class generic {
 
         include nfsclient
 
-        $mydevice = "${device}:{$exportPath}"
+        $mydevice = "${device}:${exportPath}"
 
         if $atboot {
             $myatboot = $atboot
