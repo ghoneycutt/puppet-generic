@@ -277,4 +277,89 @@ class generic {
     # create the systems group everywhere
     realize Mkgroup[systems]
 
+    # Definition: nfsmount
+    #
+    # since NFS mounts require an NFS export, it is wise to only use nfsmount
+    # in your node definitions
+    #
+    # Parameters:
+    #   $device     - device to mount, ie: hostname
+    #   $exportPath - path on NFS export to be mounted
+    #   $atboot     - mount on boot? defaults to yes
+    #   $dump       - see fstab(5), defaults to 0
+    #   $ensure     - if the mount should exist, defaults to yes
+    #   $name       - where to mount it, defaults to "/data/$name"
+    #   $options    - see fstab(5), defaults to "rw,rsize=32768,wsize=32768,proto=tcp"
+    #   $pass       - see fstab(5), defaults to 0
+    #
+    # Actions: mounts a NFS export
+    #
+    # Requires:
+    #   $device
+    #   $exportPath
+    #
+    # Sample Usage:
+    #   Common::Nfsmount { "software":
+    #     device     => "thumper1.garretthoneycutt.com",
+    #     exportPath => "/export/software",
+    #   }
+    # 
+    define nfsmount ($device, $exportPath, $atboot = undef, $dump = undef, $ensure = undef, $name = undef, $options = undef, $pass = undef) {
+
+        include nfsclient
+
+        $mydevice = "${device}:{$exportPath}"
+
+        if $atboot {
+            $myatboot = $atboot
+        } else {
+            $myatboot = "yes"
+        } # fi $atboot
+
+        if $ensure {
+            $myensure = $ensure
+        } else {
+            $myensure = "yes"
+        } # fi $ensure
+
+        if $name {
+            $myname = $name
+        } else {
+            $myname = "/data/$name"
+        } # fi $name
+
+        if $options {
+            $myoptions = $options
+        } else {
+            $myoptions = "rw,rsize=32768,wsize=32768,proto=tcp"
+        } # fi $options
+
+        if $pass {
+            $mypass = $pass
+        } else {
+            $mypass = "0"
+        } # fi $pass
+
+        if $dump {
+            $mydump = $dump
+        } else {
+            $mydump = "0"
+        } # fi $dump
+
+        # create directory for mount
+        file { "$myname":
+            ensure => directory,
+        }
+
+        mount { "$name":
+            atboot  => "$myatboot",
+            device  => "$mydevice",
+            ensure  => "$myensure",
+            fstype  => "nfs",
+            name    => "$myname",
+            options => "$myoptions",
+            pass    => "$mypass",
+            require => File["$myname"],
+        } # mount
+    } # define nfsmount
 } # class generic

@@ -1,5 +1,5 @@
 name    'ghoneycutt-generic'
-version '1.1.1'
+version '1.2.0'
 
 # included on PuppetForge are ghoneycutt-centos and
 # ghoneycutt-redhat, since these are my primary values
@@ -12,6 +12,7 @@ dependency 'ghoneycutt/facter', '>= 1.0.0'
 dependency 'ghoneycutt/hosts', '>= 1.0.0'
 dependency 'ghoneycutt/logrotate', '>= 1.0.0'
 dependency 'ghoneycutt/logwatch', '>= 1.0.0'
+dependency 'ghoneycutt/nfsclient', '>=1.2.0'
 dependency 'ghoneycutt/postfix', '>= 1.0.0'
 dependency 'ghoneycutt/puppet', '>= 1.0.0'
 dependency 'ghoneycutt/rsync', '>= 1.0.0'
