@@ -1,5 +1,5 @@
 name    'ghoneycutt-generic'
-version '1.2.0'
+version '1.2.1'
 
 # included on PuppetForge are ghoneycutt-centos and
 # ghoneycutt-redhat, since these are my primary values
